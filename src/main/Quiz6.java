@@ -5,7 +5,7 @@ public class Quiz6 {
 	public static void main(String[] args) {
 
 		BallPen ballPen = new BallPen(2, "100%", "파랑색");
-		GoodPen goodPen = new GoodPen(3, "80%", "몽블랑");
+		FountainPen fountainPen = new FountainPen(3, "80%", "몽블랑");
 
 	}
 
@@ -33,13 +33,13 @@ class BallPen extends Pen {
 
 }
 
-class GoodPen extends Pen {
-	
+class FountainPen extends Pen {
+
 	String brand;
 
-	public GoodPen(int thickness, String inkAmount, String brand) {
+	public FountainPen(int thickness, String inkAmount, String brand) {
 		super(thickness, inkAmount);
 		this.brand = brand;
 	}
-	
+
 }
